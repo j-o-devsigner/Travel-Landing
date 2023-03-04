@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <title>Gogo Travel</title>
+  </head>
+  <body class="font-Montserrat scroll-smooth dark:bg-gray-900">
+    <header>
+      <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between px-6 fixed z-10 dark:bg-gray-900 ">
+        <div class="h-auto w-auto">
+          <p class="text-xl text-primary font-black">Travels</p>
+        </div>
+        <div class="flex space-x-8">
+          <a class="font-bold text-md text-primary hover:text-tertiary transition-all duration-150 dark:hover:text-white" href="#home">Home</a>
+          <a class="font-bold text-md text-primary hover:text-tertiary transition-all duration-150 dark:hover:text-white" href="#recommendations">Recommendations</a>
+          <a class="font-bold text-md text-primary hover:text-tertiary transition-all duration-150 dark:hover:text-white" href="#featured_rentals">Rentals</a>
+          <a class="font-bold text-md text-primary hover:text-tertiary transition-all duration-150 dark:hover:text-white" href="#faqs">FAQS</a>
+          <a class="font-bold text-md text-primary hover:text-tertiary transition-all duration-150 dark:hover:text-white" href="#footer">About us</a>
+        </div>
+        <div class="flex space-x-4">
+          <a href="#recommendations">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#CC2D4A" class="w-7 h-7 transition-all duration-300 hover:stroke-tertiary dark:hover:text-white">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#CC2D4A" class="w-7 h-7 mb-3 transition-all duration-300 hover:stroke-tertiary dark:hover:text-white toggle-dark">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+              </svg>
+            </a>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div id="home">
+          <div class="w-full h-3/4">
+            <div
+              class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center lg:space-y-0 lg:items-start lg:pt-48 lg:justify-start"
+            >
+              <input
+                class="rounded-full shadow-sm w-5/12 focus:transition delay-50 ease-in-out focus:w-8/12 outline-none p-3 duration-200 lg:hidden "
+                placeholder="San Francisco..."
+                type="search"
+              />
+              <div class="hidden h-auto lg:w-2/3 lg:flex lg:pb-6">
+                <p class="text-4xl ml-16 font-bold text-white">Find more!</p>
+              </div>
+              <button
+                class="transition ease-in-out delay-150 hover:scale-110 hover:bg-primary hover:text-white duration-300 w-48 text-lg font-semibold rounded-full p-4 bg-white text-primary lg:ml-16 dark:bg-gray-900 dark:text-white"
+              >
+                Explore
+              </button>
+            </div>
+            <div class="w-full h-full lg:h-96 lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center">
+              <img
+                class="lg:hidden"
+                src="https://raw.githubusercontent.com/platzi/PlatziTravel/main/public/img/sanFrancisco.jpg"
+                alt="San Francisco"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="p-6" id="recommendations">
+      <p class="text-3xl font-semibold text-primary">Recommendations</p>
+      <div
+        class="w-auto h-72 items-center mt-6 overflow-x-auto overflow-x-contain flex space-x-6 overflow-y-hidden scrollbar-hide lg:pt-6"
+      >
+        <div class="Card">
+          <div class="Card--cover bg-norway"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">Norway</p>
+            <p class="Card--info__subtitle">Beautiful Landscapes</p>
+          </div>
+        </div>
+
+        <div class="Card">
+          <div class="Card--cover bg-new_york"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">New York</p>
+            <p class="Card--info__subtitle">Beautiful Landscapes</p>
+          </div>
+        </div>
+
+        <div class="Card">
+          <div class="Card--cover bg-yosemite"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">Yosemite</p>
+            <p class="Card--info__subtitle">Beautiful Landscapes</p>
+          </div>
+        </div>
+
+        <div class="Card">
+          <div class="Card--cover bg-seattle"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">Seattle</p>
+            <p class="Card--info__subtitle">Beautiful Landscapes</p>
+          </div>
+        </div>
+
+        <div class="Card">
+          <div class="Card--cover bg-switzerland"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">Switzerland</p>
+            <p class="Card--info__subtitle">Beautiful Landscapes</p>
+          </div>
+        </div>
+
+        <div class="Card">
+          <div class="Card--cover bg-europe"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">Europe</p>
+            <p class="Card--info__subtitle">Beautiful Landscapes</p>
+          </div>
+        </div>
+
+        <div class="Card">
+          <div class="Card--cover bg-iceland"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">Iceland</p>
+            <p class="Card--info__subtitle">Beautiful Landscapes</p>
+          </div>
+        </div>
+
+        <div class="Card">
+          <div class="Card--cover bg-sanFrancisco"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">San Francisco</p>
+            <p class="Card--info__subtitle">Beautiful Landscapes</p>
+          </div>
+        </div>
+
+        <div class="Card">
+          <div class="Card--cover bg-chicago"></div>
+          <div class="Card--info">
+            <p class="Card--info__title">Chicago</p>
+            <p class="Card--info__subtitle">Beautiful Landscapes</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="px-6 h-full w-full lg:px-6" id="featured_rentals">
+      <p class="text-3xl text-primary font-semibold pb-6 mt-6">
+        Featured Rentals
+      </p>
+      <div class="w-full h-auto flex flex-col lg:space-y-6 items-center justify-center">
+        <div class="w-full h-96 bg-chicago bg-cover rounded-xl lg:bg-center">
+          <div class="w-60 h-40 bg-black/20 ml-5 mt-5 rounded-xl">
+            <p class="Card--features_rentals__title">Chicago</p>
+            <p class="text-sm pl-8 text-white mr-24 lg:text-lg">2 Rooms</p>
+          </div>
+        </div>
+
+        <div class="lg:flex lg:w-full lg:h-1/3 lg:space-x-4 w-full flex-none">
+
+          <div class="w-full h-96 bg-LA bg-cover rounded-xl mb-8 lg:h-auto ">
+            <div class="w-60 h-40 bg-black/20 ml-5 mt-5 rounded-xl">
+              <p class="Card--features_rentals__title">Los Angeles</p>
+              <p class="text-sm pl-8 text-white mr-24 lg:text-lg">2 Rooms</p>
+            </div>
+          </div>
+
+          <div class="h-auto w-full mb-8">
+
+            <div class="w-full h-96 bg-miami bg-cover rounded-xl">
+              <div class="w-60 h-40 bg-black/20 ml-5 rounded-xl">
+                <p class="Card--features_rentals__title">Miami</p>
+                <p class="text-sm pl-8 text-white mr-24 lg:text-lg">2 Rooms</p>
+              </div>
+            </div>
+
+            <div class="w-full h-96 bg-bali bg-cover rounded-xl">
+              <div class="w-60 h-40 bg-black/20 ml-5 mt-5 rounded-xl">
+                <p class="Card--features_rentals__title">Bali</p>
+                <p class="text-sm pl-8 text-white mr-24 lg:text-lg">2 Rooms</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section class="w-full h-auto px-6 pb-8" id="faqs">
+      <div class="w-full h-full flex flex-col space-y-8">
+        <p class="text-3xl text-primary font-semibold mt-6 dark:text-white">FAQS</p>
+      </div>
+      <div>
+        <p class="text-xl font-medium text-primary dark:text-white">Payment Methods</p>
+        <p class="pt-2 text-md dark:text-white">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+      </div>
+      <div>
+        <p class="text-xl font-medium text-primary dark:text-white">Cancellation Policy</p>
+        <p class="pt-2 text-md dark:text-white">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+      </div>
+      <div>
+        <p class="text-xl font-medium text-primary dark:text-white">Long Stays</p>
+        <p class="pt-2 text-md dark:text-white">We accept VISA, MasterCard, American Express, Paypal and Binance</p>
+      </div>
+    </section>
+    <footer class="w-full h-auto bg-neutral-100 p-6 pb-20 space-y-2 lg:pb-2" id="footer">
+      <p class="text-lg">About Us</p>
+      <p class="text-sm text-gray-300 hover:text-primary">About Us</p>
+      <p class="text-sm text-gray-300 hover:text-primary">Investors</p>
+      <p class="text-sm text-gray-300 hover:text-primary">Jobs</p>
+      <p class="text-sm text-gray-300 hover:text-primary">Privacy Policy</p>
+      <p class="text-sm text-gray-300 hover:text-primary">Terms and Conditions</p>
+      <p class="text-sm text-gray-300 hover:text-primary">Travels</p>
+      <p class="text-sm text-gray-300 hover:text-primary">Follow us</p>
+    </footer>
+    <div id="tab_bar" class="w-full h-16 bg-white px-6 pt-3 fixed bottom-0 shadow-md flex justify-evenly lg:hidden">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F2F2F2" class="w-10 h-10 transition-all duration-300 hover:stroke-primary">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+        </svg>
+      </a>
+
+      <a href="#recommendations">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F2F2F2" class="w-10 h-10 transition-all duration-300 hover:stroke-primary">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+        </svg>
+      </a>
+
+      <a href="#featured_rentals">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F2F2F2" class="w-10 h-10 transition-all duration-300 hover:stroke-primary">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+        </svg>
+      </a>
+
+      <button type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F2F2F2" class="w-10 h-10 mb-3 transition-all duration-300 hover:stroke-primary toggle-dark">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z" />
+        </svg>
+      </button>
+
+      </a>
+    </div>
+    <script>
+      const darkModeBtn = document.querySelectorAll('.toggle-dark')
+      const doc = document.querySelector('html')
+      darkModeBtn.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault()
+          doc.classList.toggle('dark')
+        })
+      })
+    </script>
+  </body>
+</html>
